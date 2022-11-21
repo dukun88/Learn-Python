@@ -18,8 +18,8 @@ if __name__ == "__main__":
             case "posix": os.system("clear")
             case "nt": os.system("cls")
 
-        print(20*'='+"WELCOME TO MY MUSIC"+'='*20)
-        print(59*'-')
+        print(41*'='+"WELCOME TO MY MUSIC"+'='*41)
+        print(100*'-')
 
         print(f"\n1. Read Data")
         print(f"2. Create Data")
@@ -30,9 +30,9 @@ if __name__ == "__main__":
 
         match option:
             case "1": CRUD.read_console()
-            case "2": print("Create Data")
-            case "3": print("Update Data")
-            case "4": print("Delete Data")  
+            case "2": CRUD.create_console()
+            case "3": CRUD.update_console()
+            case "4": CRUD.delete_console()
 
         done = input("Anything Else? (y/n)")
         if done == "n" or done == "N":
